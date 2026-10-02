@@ -45,8 +45,8 @@ ax4 = fig.add_subplot(2, 2, 4)
 # Calculamos la probabilidad empírica de churn por cada mes
 churn_prob = df.groupby('tenure')['Churn'].mean().reset_index()
 sns.regplot(data=churn_prob, x='tenure', y='Churn', 
-            scatter_kws={'alpha':0.6, 'color':'#55A868', 's': 20}, 
-            line_kws={'color':'#C44E52', 'linewidth': 3}, 
+            scatter_kws={'alpha':0.6, 'color':"#DFE211", 's': 20}, 
+            line_kws={'color':"#5111B8", 'linewidth': 3}, 
             order=3) # Regresión polinómica para capturar la curva de predicción
 ax4.set_title('Línea de Tendencia: Probabilidad de Cancelación', fontsize=14, fontweight='bold')
 ax4.set_xlabel('Meses de Antigüedad (tenure)', fontsize=12)
